@@ -1,1 +1,120 @@
 # index.html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+      .header{
+        background-color: rgb(2,1,61);
+        color: #fff;
+      }
+        .main-page{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+       }
+    </style>
+    <link href="asset/css/bootstrap.min.css" rel="stylesheet" >
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">TP Boostrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Test</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link disabled">Inactif</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Se connecter</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="btn btn-success">S'inscrire</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <section class="header text-center p-5">
+      <div class="container">
+        <span>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi animi optio, natus incidunt minus iure.
+        </span>
+        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal" >Souscrire</button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog text-dark">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="tooltip" data-bs-placement="right" title="Fermer le popup"></button>
+              </div>
+              <div class="modal-body">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, magni?
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" >Saves changes</button>
+
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+  
+      
+
+
+    </section>
+
+    <section class="main-page  py-5">
+      <div class="container">
+        <div class="row h-100 justify-content-center align-items-center" >
+          <div class="col-lg-6">
+            <img src="asset/image/fon.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6">
+            <h1  class="p-5">Lorem ipsum dolor sit  at!</h1>
+            <p class="p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id necessitatibus optio at cupiditate ut ex consectetur totam, magni nostrum. Reiciendis aperiam, odit i</p>
+            <form  class="p-5">
+            <div class="input-group mb-3">
+              <input type="email"
+                class="form-control"
+                placeholder="Adresse email"
+                aria-label=""
+                aria-describedby=""
+              >
+              <button class="input-group-text btn btn-primary" >S'inscrire</button>
+            </div>
+           
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <script src="asset/js/bootstrap.bundle.min.js"  ></script>
+
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toogle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl){return new bootstrap.Tooltip(tooltipTriggerEl)})
+    </script>
+  </body>
+</html>
